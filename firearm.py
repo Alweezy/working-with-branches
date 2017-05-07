@@ -32,3 +32,7 @@ class Firearm(object):
         else:
             return self.base_sale_price + 150 * self.capacity
 
+    @abstractmethod
+    def firearm_type(self):
+        """Return a string showing the type of firearm."""
+        pass
